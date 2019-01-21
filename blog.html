@@ -1,0 +1,100 @@
+---
+layout: base
+title: Posts
+use-site-title: true
+---
+<div id="profile-page" class="page-container">
+    <div class="container">
+        <div class="page_title text-center">
+            <h2 class="page-title">POSTS</h2>
+        </div>
+        <div class="sub-section">
+            <h3 class="section-title text-center">Yura's posts</h3>
+            <div class="posts-list">
+                {% for post in paginator.posts %}
+                <article>
+                    <a class="post-preview" href="{{ post.url | prepend: site.baseurl }}">
+                        <h2 class="post-title">{{ post.title }}</h2>
+
+                        {% if post.subtitle %}
+                        <h3 class="post-subtitle">
+                            {{ post.subtitle }}
+                        </h3>
+                        {% endif %}
+                        <p class="post-meta">
+                            Posted on {{ post.date | date: "%B %-d, %Y" }}
+                        </p>
+
+                        <div class="post-entry">
+                            {{ post.content | truncatewords: 50 | strip_html | xml_escape}}
+                            <span href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</span>
+                        </div>
+                    </a>
+                </article>
+                {% endfor %}
+            </div>
+
+            {% if paginator.total_pages > 1 %}
+            <ul class="pager main-pager">
+                {% if paginator.previous_page %}
+                <li class="previous">
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+                </li>
+                {% endif %}
+                {% if paginator.next_page %}
+                <li class="next">
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+                </li>
+                {% endif %}
+            </ul>
+            {% endif %}
+        </div>
+        <div class="sub-section">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <h3 class="section-title text-center">Hobbies & Interests</h3>
+                    <div class="interest-list text-center">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="item">
+                                    <span class="item-icon"><i class="fa fa-puzzle-piece"></i></span>
+                                    <span class="item-title">Puzzles</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="item">
+                                    <span class="item-icon"><i class="fa fa-chess"></i></span>
+                                    <span class="item-title">Chess</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="item">
+                                    <span class="item-icon"><i class="fa fa-camera-retro"></i></span>
+                                    <span class="item-title">Photography</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="item">
+                                    <span class="item-icon"><i class="fa fa-atom"></i></span>
+                                    <span class="item-title">Algorithms</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="item">
+                                    <span class="item-icon"><i class="fa fa-futbol"></i></span>
+                                    <span class="item-title">Football</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <div class="item">
+                                    <span class="item-icon"><i class="fa fa-books"></i></span>
+                                    <span class="item-title">Reading books</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

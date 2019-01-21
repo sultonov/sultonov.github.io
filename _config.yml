@@ -39,3 +39,10 @@ defaults:
     values:
       layout: "page"
       show-avatar: true
+
+exclude:
+  - Dockerfile
+  - Gemfile
+  - .gitignore
+  - template.html
+  - .idea
