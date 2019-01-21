@@ -1,0 +1,41 @@
+# --- Serving options --- #
+
+url: "https://sultonov.github.io"
+baseurl: ""
+
+title: Yura Sultonov
+description: "Programmer from Uzbekistan"
+
+timezone: "Uzbekistan/Tashkent"
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title/
+paginate: 10
+paginate_path: "/page:num/"
+
+disqus: ""
+
+google_analytics: ""  # Your Google Analytics ID
+
+fb_app_id: ""
+
+# Default YAML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      show-share: true # add sharing buttons to all blog posts
+      show-subscribe: true # add subscribe email to all blog posts
+      addthis-plugin: true
+      carbonads: true
+      datacampcourse: true
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "page"
+      show-avatar: true
