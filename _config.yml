@@ -9,9 +9,9 @@ description: "Programmer from Uzbekistan"
 timezone: "Uzbekistan/Tashkent"
 markdown: kramdown
 highlighter: rouge
-permalink: /blog/:title/
-paginate: 10
-paginate_path: "/page:num/"
+paginate: 5
+paginate_path: "/blog/page:num/"
+excerpt_separator: <!--more-->
 
 disqus: ""
 
@@ -32,17 +32,9 @@ defaults:
       show-subscribe: true # add subscribe email to all blog posts
       addthis-plugin: true
       carbonads: true
-      datacampcourse: true
   -
     scope:
       path: "" # all files
     values:
       layout: "page"
       show-avatar: true
-
-exclude:
-  - Dockerfile
-  - Gemfile
-  - .gitignore
-  - template.html
-  - .idea
