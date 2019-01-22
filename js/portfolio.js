@@ -64,7 +64,7 @@ $(function() {
         },
         image: {
             titleSrc: function(item) {
-                return item.el.attr('title') + '<small>by Alex Smith</small>';
+                return item.el.attr('title') + '<small>by Yura Sultonov</small>';
             }
         }
     });
