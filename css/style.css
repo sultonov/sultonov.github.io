@@ -1223,3 +1223,33 @@ body {
 .post-image {
 	width: 100%;
 }
+
+.fa-lg {
+	margin-right: 10px;
+	font-size: 40px;
+	width: 30px;
+}
+
+.social-share-section {
+	float: right;
+}
+
+.social-share-section .fa-twitter {
+	color: #38A1F3;
+}
+
+.social-share-section .fa-facebook {
+	color: #4267b2;
+}
+
+.social-share-section .fa-google-plus {
+	color: #b22816;
+}
+
+.social-share-section .fa-linkedin {
+	color: #0077B5;
+}
+
+.social-share-section .fa-pinterest {
+	color: #BD081C;
+}

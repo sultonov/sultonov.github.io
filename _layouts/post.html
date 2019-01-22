@@ -38,9 +38,11 @@ common-js:
                         <img class="post-image" src="{{ page.share-img }}">
                         {% endif %}
                         <br>
+                        <br>
                         {{ content }}
                         <p class="post-meta">
                             Posted on {{ page.date | date: "%B %-d, %Y" }}
+                            {% include social-share.html %}
                         </p>
                         {% if page.comments %}
                         <div class="disqus-comments">
