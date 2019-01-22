@@ -1,8 +1,8 @@
 var awards = [
         {
-            "title": "Blah blah blah blah blah blah blah blah blah blah blah blah blah",
-            "by": "by Blah blah blah blah at blah blah",
-            "url": ""
+            "title": "Honorable mention of ACM ICPC Regional contest 2014",
+            "by": "Tashkent, 7 december, 2014",
+            "url": "/img/certificates/neerc_regional_2014.jpg"
         }
     ]
 ;
@@ -18,7 +18,7 @@ $(document).ready(function() {
             preload: [0,1] // Will preload 0 - before current, and 1 after the current image
         },
         image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded...',
             titleSrc: function(item) {
                 return item.el.attr('title') + '<small>'+item.el.data('by')+'</small>';
             }
@@ -33,9 +33,9 @@ $(document).ready(function() {
             elem = "<div class='row'>";
         }
         elem += "<div class=\"col-md-3 sertificate\">";
-        elem += "<a href=\"http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg\" title=\"" + awards[i].title + "\"";
+        elem += "<a href=\""+awards[i].url+"\" title=\"" + awards[i].title + "\"";
         elem += "data-by=\"" + awards[i].by + "\">";
-        elem += "<img class=\"sertificate-item\" src=\"http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg\">";
+        elem += "<img class=\"sertificate-item\" src=\""+awards[i].url+"\">";
         elem += "<p class='certificate-text'>"+awards[i].title+"</p>";
         elem += "</a></div>";
         if (i === awards.length - 1)
