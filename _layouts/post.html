@@ -40,9 +40,9 @@ common-js:
                         <br>
                         <br>
                         {{ content }}
+                        {% include social-share.html %}
                         <p class="post-meta">
                             Posted on {{ page.date | date: "%B %-d, %Y" }}
-                            {% include social-share.html %}
                         </p>
                         {% if page.comments %}
                         <div class="disqus-comments">
