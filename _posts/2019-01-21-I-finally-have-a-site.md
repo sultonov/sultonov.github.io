@@ -19,5 +19,4 @@ Lastly, **[subscribe to my feed](https://sultonov.github.io/feed.xml)!**  To be 
 
 This website is currently in its infancy, so do let me know if you find any bugs/typos/have any comments at all. All comments are welcome. Unless they're not nice, in which case a PayPal donation is required for me to read your comment ;)
 
-
 ---

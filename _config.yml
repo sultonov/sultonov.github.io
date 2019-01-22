@@ -13,7 +13,7 @@ paginate: 5
 paginate_path: "/blog/page:num/"
 excerpt_separator: <!--more-->
 
-disqus: ""
+disqus: "sultonov"
 
 google_analytics: ""  # Your Google Analytics ID
 
