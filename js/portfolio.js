@@ -76,46 +76,4 @@ $(function() {
         preloader: false,
         fixedContentPos: false
     });
-    $("#cf-form").submit(function (e) {
-        e.preventDefault();
-        var isValid = true;
-        var email = $("#email").val();
-        $("#name").css("border-color", "#e8eaf6");
-        $("#email").css("border-color", "#e8eaf6");
-
-        if($("#name").val() === ""){
-            $("#name").css("border-color", "red");
-            $("#name").focus();
-            isValid = false;
-        }
-        if($("#email").val() === ""){
-            $("#email").css("border-color", "red");
-            $("#email").focus();
-            isValid = false;
-        }
-        if(!validateEmail(email)){
-            $("#email").css("border-color", "red");
-            $("#email").focus();
-            isValid = false;
-        }
-
-        if(isValid){
-            var form_data = $("#cf-form").serialize();
-            $.ajax({
-                type: "POST",
-                url: "send-mail.php",
-                dataType: "json",
-                data: form_data
-            }).done(function (data) {
-                if(data["status"] === "success"){
-                    $(".contact-message").html("<span class='sucess'>Thank you! Your message has been successfully sent. We will contact you very soon!</span>");
-                }
-                if(data["status"] === "error"){
-                    $(".contact-message").html("<span class='error'>There was an error trying to send your message. Please try again later.</span>");
-                }
-            }).fail(function (data) {
-                console.log(data);
-            });
-        }
-    });
 });

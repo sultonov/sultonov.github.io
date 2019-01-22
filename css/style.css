@@ -1253,3 +1253,29 @@ body {
 .social-share-section .fa-pinterest {
 	color: #BD081C;
 }
+
+.sertificate-item {
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.sertificate {
+	padding: 10px;
+}
+
+.certificate-text {
+	text-align: center;
+}
+
+img.responsive-img {
+    margin: 0 auto;
+    max-height: 100px;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+.brown-text {
+    padding-top: 10px;
+}
