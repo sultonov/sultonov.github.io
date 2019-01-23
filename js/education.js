@@ -100,7 +100,7 @@ var awards = [
             "url": "/img/certificates/2015.12.05.jpg"
         },
         {
-            "title": "Certificate of achievement for participating at internet-conference “Trends and prospects of the development of science and education in the context of globalization“",
+            "title": "Certificate of achievement for participating at internet-conference",
             "by": "Pereyaslav-Khmelnitsky State Pedagogical University named after Gregory Skovoroda, december 4, 2015",
             "url": "/img/certificates/2015.12.04.jpg"
         },
@@ -110,7 +110,7 @@ var awards = [
             "url": "/img/certificates/2015.10.23.jpg"
         },
         {
-            "title": "Diploma of the third degree for the third place at the Republican Olympiad in informatics.",
+            "title": "Diploma for the third place at the Republican Olympiad in informatics.",
             "by": "Ministry of higher and secondary specialized education of republic Uzbekistan, june 8, 2015",
             "url": "/img/certificates/2015.06.08.jpg"
         },
