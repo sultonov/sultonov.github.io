@@ -1095,6 +1095,9 @@ body {
 	.home_title h1 {
 		font-size: 80px; 
 	}
+    .home_title h2 {
+        font-size: 25px;
+    }
 	.home_title #subtitle, .typed-cursor {    
 		font-size: 30px;		
 	}	
@@ -1107,12 +1110,18 @@ body {
 @media screen and (max-width: 767px) {
 	.home_title h1 {
 		font-size: 50px; 
-	}	
+	}
+    .home_title h2 {
+        font-size: 30px;
+    }
 }
 @media screen and (max-width: 374px) {
 	.home_title h1 {
 		font-size: 40px; 
 	}
+    .home_title h2 {
+        font-size: 22px;
+    }
 	.home_title #subtitle,.typed-cursor {  
 		font-size: 20px;
 	}	
