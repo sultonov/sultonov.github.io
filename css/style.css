@@ -488,6 +488,10 @@ body {
 	font-size: 130px;
     color: #fff;
 }
+.home_title h2 {
+    font-size: 72px;
+    color: #fff;
+}
 .home_title #subtitle{
     color: #fbd54a;
     font-size: 32px;
@@ -1286,9 +1290,4 @@ img.responsive-img {
 }
 .brown-text {
     padding-top: 10px;
-}
-
-.home_title h2 {
-    font-size: 72px;
-    color: #fff;
 }
