@@ -76,5 +76,5 @@ $(function() {
         preloader: false,
         fixedContentPos: false
     });
-    new LazyLoad();
 });
+new LazyLoad();
