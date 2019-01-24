@@ -215,10 +215,11 @@ $(document).ready(function () {
         elem += "<div class=\"col-md-3 certificate\">";
         elem += "<a href=\"" + awards[i].url + "\" title=\"" + awards[i].title + "\"";
         elem += "data-by=\"" + awards[i].by + "\">";
-        elem += "<img class=\"certificate-item\" src=\"" + awards[i].url + "\">";
+        elem += "<img class=\"certificate-item\" src='/img/blurryback.jpg' data-src=\"" + awards[i].url + "\">";
         elem += "<p class='certificate-text'>" + awards[i].title + "</p>";
         elem += "</a></div>";
         if (i === awards.length - 1)
             div.innerHTML += elem + "</div>";
     }
+    new LazyLoad();
 });
