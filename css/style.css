@@ -1278,3 +1278,8 @@ img.responsive-img {
 .brown-text {
     padding-top: 10px;
 }
+
+.home_title h2 {
+    font-size: 72px;
+    color: #fff;
+}
