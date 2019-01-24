@@ -3,8 +3,9 @@
 url: "https://sultonov.github.io"
 baseurl: ""
 
-title: Yura Sultonov
+title: Yura Sultonov's web site
 description: "Programmer from Uzbekistan"
+avatar: "/img/44565548_1926078517485074_8854205888227966976_o.jpg"
 
 timezone: "Uzbekistan/Tashkent"
 markdown: kramdown
@@ -38,3 +39,11 @@ defaults:
     values:
       layout: "page"
       show-avatar: true
+
+author:
+  name: Yura Sultonov
+  email: "sultonovyura@gmail.com"
+  facebook: yura.sultonov
+  github: sultonov
+  twitter: yura_sultonov
+  linkedin: yura-sultonov
