@@ -118,7 +118,11 @@ particlesJS('particles-js',
 );
 document.addEventListener('DOMContentLoaded', function() {
     new Typed('.home_title #subtitle', {
-        strings: ['Hi. I’m Yura, a web/mobile developer from Uzbekistan, Tashkent. Please take a look around!', 'I like to do amazing Mobile Apps and Web Apps.', 'I deliver funny and usable applications for your business'],
+        strings: [
+            'Hi. I’m Yura, a web/mobile developer from Uzbekistan, Tashkent.',
+            'Please take a look around!',
+            'I like to do amazing Mobile Apps and Web Apps.',
+            'I deliver funny and usable applications for your business'],
         typeSpeed: 50,
         backSpeed: 20,
         smartBackspace: true,
