@@ -7,7 +7,7 @@ title: Yura Sultonov's web site
 description: "Programmer from Uzbekistan"
 avatar: "/img/44565548_1926078517485074_8854205888227966976_o.jpg"
 
-timezone: "Uzbekistan/Tashkent"
+timezone: "Asia/Tashkent"
 markdown: kramdown
 highlighter: rouge
 paginate: 5

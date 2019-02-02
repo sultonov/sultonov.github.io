@@ -6,8 +6,8 @@ share-img: "/img/blog/hello-world.jpg"
 permalink: i-finally-have-a-site/
 ---
 
-#### Welcome to Yura Sultonov on the web!
-
+## Welcome to Yura Sultonov on the web!
+<br>
 It's been a while now that I've wanted to have a personal website - just somewhere to be able to park random files/documents and perhaps even host a blog where I can brain dump my personal and professional thoughts. 
 <!--more-->
 
