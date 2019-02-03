@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Для чего я создал свой блог именно в Jekyll?"
-tags: [personal, blog]
+tags: [personal, blog, jekyll, github]
 share-img: "/img/blog/jekyll.jpg"
 permalink: dlya-chego-ya-sozdal-blog-imenno-v-jekyll/
 ---
