@@ -3,7 +3,7 @@
 url: "https://sultonov.github.io"
 baseurl: ""
 
-title: Yura Sultonov's web site
+title: "Welcome to"
 description: "Programmer from Uzbekistan"
 avatar: "/img/44565548_1926078517485074_8854205888227966976_o.jpg"
 
@@ -29,8 +29,6 @@ defaults:
       comments: true  # add comments to all blog posts
       show-share: true # add sharing buttons to all blog posts
       show-subscribe: true # add subscribe email to all blog posts
-      addthis-plugin: true
-      carbonads: true
   -
     scope:
       path: "" # all files

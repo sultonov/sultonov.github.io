@@ -31,10 +31,10 @@ sitemap:
   {% endfor %}
   {% for page in site.pages %}
     {% unless page.sitemap.exclude %}
+  {% if page.title or page.subtitle %}
     <url>
       <loc>{{ site.url }}{{ page.url | remove: "index.html" }}</loc>
       {% if page.sitemap.lastmod %}
-      {% if page.ext != 'css' %}
         <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
       {% elsif page.date %}
         <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
@@ -51,8 +51,8 @@ sitemap:
       {% else %}
         <priority>0.3</priority>
       {% endif %}
-      {% endif %}
     </url>
+    {% endif %}
     {% endunless %}
   {% endfor %}
 </urlset>
