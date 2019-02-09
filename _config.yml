@@ -16,9 +16,7 @@ excerpt_separator: <!--more-->
 
 disqus: "sultonov"
 
-google_analytics: ""  # Your Google Analytics ID
-
-fb_app_id: ""
+google_analytics: "UA-134202028-1"
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
