@@ -1295,3 +1295,63 @@ img.responsive-img {
 .brown-text {
     padding-top: 10px;
 }
+
+.post h2 {
+	font-size: 1.6315em;
+	margin-top: calc(13px + 1.2em);
+	margin-bottom: calc(10px + 0.2em);
+	font-weight: 700;
+	letter-spacing: normal;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	font-family: Roboto, Arial, sans-serif;
+	color: #111;
+}
+
+.post p{
+	margin-bottom: 1.65em;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-size: 100%;
+	font-family: inherit;
+	font-weight: 400;
+	line-height: 1.79;
+	color: rgba(0, 0, 0, 0.74);
+}
+
+.post blockquote {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding-left: 45px;
+	color: #989898;
+	font-family: "IBM Plex Serif", ff-more-web-pro, "PT Serif", Georgia, serif;
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 1.75;
+	-webkit-font-smoothing: antialiased;
+	quotes: none;
+	border: 0;
+	vertical-align: baseline;
+	text-rendering: optimizeLegibility;
+}
+
+.post blockquote:before {
+	content: "\201c";
+	float: left;
+	margin-top: 18px;
+	margin-left: -45px;
+	font-family: Georgia, Arial, sans-serif;
+	font-style: normal;
+	font-size: 52px;
+	line-height: 0.41;
+	color: #2d53fe;
+}
+
+.post blockquote > p{
+	margin-bottom: 26px;
+	color: #989898;
+	font-weight: 300;
+	line-height: 1.75;
+	-webkit-font-smoothing: antialiased;
+}

@@ -7,7 +7,7 @@ permalink: linux-terminalida-profi-ishlaymiz-foydali-komandalar-toplami-1-qism/
 ---
 
 Terminalda samarali ishlaydigan Linux Pro-foydalanuvchilarni ko'rganmisiz? Siz ham xohlaysizmi? Savol emas: bu maqolada biz vaqtni tejashga va samaradorlikni oshirishga yordam beradigan ba'zi foydali buyruqlar ko'rib chiqamiz.
-
+<!--more-->
 ### Avtomatik tugatish uchun tabni ishlating
 
 Terminalda biror narsa yozishni boshlaganingizda, Tab tugmasini bosishingiz mumkin va siz kiritgan qatordan boshlangan mumkin davomiy variantlar taklif etiladi. Misol uchun, `file1.txt` nomli faylni nusxalashni istasangiz, faqat `cp f` ni kiritishingiz mumkin, Tab tugmasini bosib, variantlarni ko'rasiz.
@@ -119,5 +119,9 @@ Aytgancha, so'zlarni(buyruqlarni) tuzatish uchun yolg'onchilarni ishlatishning h
 ### Qayta ishga tushamiz (restart)
 
 Kompyuterni terminaldan o'chirish uchun `poweroff` buyrug'i, uni qayta ishga tushirish uchun esa `reboot` buyrug'ini yozish talab etiladi.
+
+---
+
+PS: maqolaning 2-qismini [bu yerdan](/linux-terminalida-profi-ishlaymiz-foydali-komandalar-toplami-2-qism/) o'qishingiz mumkin.
 
 ---
