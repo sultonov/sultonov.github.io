@@ -23,7 +23,7 @@ Ushbu maqolada, agar siz Android dasturchi bo'lishga qaror qilsangiz, mobil dast
 
 Mobil dasturlashning ko'plab tillari mavjud, ammo men eng asosiy va an'anaviy Java — dan boshlab o'rganishni maslahat beraman. Ushbu til 2002 yildan boshlab dasturchilar orasida barqaror 1-chi yoki 2-chi mashhurlikni saqlab keladi([TIOBE](https://www.tiobe.com/tiobe-index/) dasturlash tillari indeksiga asoslangan holda).
 <div style="text-align: center">
-<img src="/img/blog/java-tiobe.png"/>
+<img style="width: 100%" src="/img/blog/java-tiobe.png"/>
 </div>
 
 Undagi dasturlash asoslarini o'rganganib bo'lganingizdan so'ng, qolgan ixtiyoriy tillarga o'tishingiz ancha oson kechadi. Biroq, men birdaniga bir nechta tilni o'rganmaslikni maslahat bergan bo'lar edim. Avvaliga bitta narsa bilan shug'ullanish yaxshi va shundan keyingina boshqasiga o'tish eng to'g'ri yo'ldir.
