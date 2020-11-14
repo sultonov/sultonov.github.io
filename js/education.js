@@ -1,4 +1,4 @@
-var awards = [
+let awards = [
         {
             "title": "Diploma of the winner of the competition “Yurt Kelajagi 2017“ at the regional stage",
             "by": "Khorezm region branch of youth movement “Kamolot”, may 8, 2017",
@@ -149,41 +149,69 @@ var awards = [
             "by": "ACM programming contest, november 8, 2014",
             "url": "/img/certificates/2014.11.08.jpg"
         },
-    {
-        "title": "Certificate of Honor for excellent study",
-        "by": "Urgench branch of TUIT, september 2, 2014",
-        "url": "/img/certificates/2014.09.02.jpg"
-    },
-    {
-        "title": "Certificate of Honor for excellent study",
-        "by": "Urgench branch of TUIT, september 2, 2014",
-        "url": "/img/certificates/2014.09.02.jpg"
-    },
-    {
-        "title": "Diploma of the winner of the competition “Yurt Kelajagi 2014“ at the republic stage",
-        "by": "Youth movement “Kamolot”, august 8, 2014",
-        "url": "/img/certificates/2014.08.08.jpg"
-    },
-    {
-        "title": "Diploma of the winner of the competition “Yurt Kelajagi 2014“ at the regional stage",
-        "by": "Khorezm branch of youth movement “Kamolot”, july 7, 2014",
-        "url": "/img/certificates/2014.07.07.jpg"
-    },
-    {
-        "title": "Diploma of the winner of the competition “Yurt Kelajagi 2014“ at the subregional stage",
-        "by": "Urgench branch of youth movement “Kamolot”, may 5, 2014",
-        "url": "/img/certificates/2014.05.05.jpg"
-    },
-    {
-        "title": "Diploma of the first degree for the first place at the Olympiad in history.",
-        "by": "Yangibazar branch of “Ministry of higer and secondary specialized education of the republic of Uzbekistan“, april 25, 2008",
-        "url": "/img/certificates/2008.jpg"
-    },
-    {
-        "title": "Diploma of the first degree for the first place at the Olympiad in mathematics.",
-        "by": "Yangibazar branch of “Ministry of higer and secondary specialized education of the republic of Uzbekistan“, march 28, 2004",
-        "url": "/img/certificates/2004.jpg"
-    },
+        {
+            "title": "Certificate of Honor for excellent study",
+            "by": "Urgench branch of TUIT, september 2, 2014",
+            "url": "/img/certificates/2014.09.02.jpg"
+        },
+        {
+            "title": "Certificate of Honor for excellent study",
+            "by": "Urgench branch of TUIT, september 2, 2014",
+            "url": "/img/certificates/2014.09.02.jpg"
+        },
+        {
+            "title": "Diploma of the winner of the competition “Yurt Kelajagi 2014“ at the republic stage",
+            "by": "Youth movement “Kamolot”, august 8, 2014",
+            "url": "/img/certificates/2014.08.08.jpg"
+        },
+        {
+            "title": "Diploma of the winner of the competition “Yurt Kelajagi 2014“ at the regional stage",
+            "by": "Khorezm branch of youth movement “Kamolot”, july 7, 2014",
+            "url": "/img/certificates/2014.07.07.jpg"
+        },
+        {
+            "title": "Diploma of the winner of the competition “Yurt Kelajagi 2014“ at the subregional stage",
+            "by": "Urgench branch of youth movement “Kamolot”, may 5, 2014",
+            "url": "/img/certificates/2014.05.05.jpg"
+        },
+        {
+            "title": "Diploma of the first degree for the first place at the Olympiad in history.",
+            "by": "Yangibazar branch of “Ministry of higer and secondary specialized education of the republic of Uzbekistan“, april 25, 2008",
+            "url": "/img/certificates/2008.jpg"
+        },
+        {
+            "title": "Diploma of the first degree for the first place at the Olympiad in mathematics.",
+            "by": "Yangibazar branch of “Ministry of higer and secondary specialized education of the republic of Uzbekistan“, march 28, 2004",
+            "url": "/img/certificates/2004.jpg"
+        },
+    ]
+;
+let dgu = [
+        {
+            "title": "Интеллектуальная система для распознавания книг по обложке",
+            "by": "September 21, 2020",
+            "url": "/img/dgu/book-cover.jpg"
+        },
+        {
+            "title": "Андроид приложение для распознавания книг по обложке",
+            "by": "September 21, 2020",
+            "url": "/img/dgu/book-cover-app-android.jpg"
+        },
+        {
+            "title": "Search BC - поисковая система обложки книги на основе больших данных",
+            "by": "September 21, 2020",
+            "url": "/img/dgu/search-bc.jpg"
+        },
+        {
+            "title": "CodePlayDefense - система управления инцидентами информационной безопасности на основе централизованной базы данных",
+            "by": "April 3, 2019",
+            "url": "/img/dgu/codeplay-defense.jpg"
+        },
+        {
+            "title": "CodePlay - system for competitions CTF (Capture The Flag)",
+            "by": "February 16, 2018",
+            "url": "/img/dgu/codeplay.jpg"
+        },
     ]
 ;
 $(document).ready(function () {
@@ -219,6 +247,23 @@ $(document).ready(function () {
         elem += "<p class='certificate-text'>" + awards[i].title + "</p>";
         elem += "</a></div>";
         if (i === awards.length - 1)
+            div.innerHTML += elem + "</div>";
+    }
+    div = document.getElementsByClassName('popup-gallery')[1];
+    elem = "<div class='row'>";
+    for (let i = 0; i < dgu.length; i++) {
+        if (i % 4 === 0 && i !== 0) {
+            elem += "</div>";
+            div.innerHTML += elem;
+            elem = "<div class='row'>";
+        }
+        elem += "<div class=\"col-md-3 certificate\">";
+        elem += "<a href=\"" + dgu[i].url + "\" title=\"" + dgu[i].title + "\"";
+        elem += "data-by=\"" + dgu[i].by + "\">";
+        elem += "<img class=\"certificate-item\" src='/img/loader.svg' data-src=\"" + dgu[i].url + "\">";
+        elem += "<p class='certificate-text'>" + dgu[i].title + "</p>";
+        elem += "</a></div>";
+        if (i === dgu.length - 1)
             div.innerHTML += elem + "</div>";
     }
     new LazyLoad();
