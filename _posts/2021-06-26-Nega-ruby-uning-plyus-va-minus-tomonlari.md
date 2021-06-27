@@ -20,21 +20,25 @@ p {
 }
 </style>
 
-Ko'pchilikni xabari bor hozirda o'z dasturchilik faoliyatimni Amerikaning [Gap Intelligence](https://gapintelligence.com) firmasida Ruby developer bo'lib yuritmoqdaman. Bugungi kunda toza Ruby da, va Ruby on Rails (RoR) frameworkining 3 xil versiyasida ishlashga to'g'ri kelyapti va bu orada Ruby haqida ozmi ko'pmi bilimlarimni oshirib kelmoqdaman. Bugun sizlar bilan Ruby ning o'zim bilgan jihatlarini bo'lishmoqchiman.
+Ko'pchilikni xabari bor hozirda o'z dasturchilik faoliyatimni Amerikaning [Gap Intelligence](https://gapintelligence.com) firmasida Ruby developer bo'lib yuritmoqdaman. Bugungi kunda toza Ruby da, va Ruby on Rails (RoR) frameworkining 3 xil versiyasida ishlashga to'g'ri kelyapti va bu orada Ruby haqida ozmi ko'pmi bilimlarimni oshirib kelmoqdaman. Bugun sizlar bilan Ruby ning o'zim bilgan jihatlarini bo'lishmoqchiman. Xatoliklar va kamchiliklar uchun oldindan uzr so'rayman, bu bor yo'g'i 4 oylik faoliyatimdan kelib chiqqan so'nggi fikrlarim, balki keyinchalik yanada takomillashtirilgan holatda o'z fikrlarimni keyingi bloglarda berib borishga harakat qilaman.
 
-> "Inson ijodkorlik uchun yaratilgan va men doimo yaratishni yaxshi ko'rishimni bilganman. Afsuski, men rassom yoki musiqachi iste'dodidan mahrum bo'ldim. Lekin dasturlarni qanday yozishni bilaman. Men kompyuter meni boshqarishini emas, kompyuter mening xizmatkorim bo'lishini hohlayman, shuning uchun unga nima qilish kerakligini tez va samarali tushuntira olishim kerak!" - *Yukihiro Matsumoto, Ruby tilini asoschisi*
+> "Inson ijodkorlik uchun yaratilgan va men doimo yaratishni yaxshi ko'rishimni bilganman. Afsuski, men rassom yoki musiqachi iste'dodidan mahrum bo'ldim. Lekin dasturlarni qanday yozishni bilaman. Men kompyuter meni boshqarishini emas, kompyuter mening xizmatkorim bo'lishini hohlayman, shuning uchun unga nima qilish kerakligini tez va optimal tushuntira olishim kerak!" - *Yukihiro Matsumoto, Ruby dasturlash tili asoschisi*
 
 ---
 
 ## Ruby va RoR tarixi
 
-Ruby ochiq kodli, obyektga yo'naltirilgan va tarjima qilinadigan (interpretatsiya) dasturlash tili hisoblanib, 1993-yilda yaponiyalik Yukihiro Matsumoto tomonidan ishlab chiqilgan. 1993 yil 24 fevralda Ruby tilining tug'ilgan kuni hisoblanadi, shu kundan boshlab Perl va Python Matsumotoning talablarini qondirmaganidan so'ng u Ruby ustida ish boshlaydi. Ruby ning birinchi ommaviy 0.95 versiyasi 1995-yil 21-dekabrda Yaponiya ichki telekonferensiyasida taqdim etiladi. Keyinchalik, ikki kun ichida Rubyning keyingi uchta versiyasi chiqariladi. Rubyning dastlabki versiyalarida ham Matsumoto alohida ahamiyatga ega bo'lgan imkoniyatlarni yaratgan edi: obyektga yo'naltirilgan dasturlash, meros olishga ega sinflar, iteratorlar, istisnolarni qayta ishlash (exception lar) va hokazolar.
+[Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)) ochiq kodli, obyektga yo'naltirilgan va tarjima qilinadigan ([interpretatsiya](https://en.wikipedia.org/wiki/Interpreter_(computing))) dasturlash tili hisoblanib, 1993-yilda yaponiyalik [Yukihiro Matsumoto](https://en.wikipedia.org/wiki/Yukihiro_Matsumoto) tomonidan ishlab chiqilgan. 1993-yil 24-fevralda Ruby tilining tug'ilgan kuni hisoblanadi, shu kundan boshlab Perl va Python Matsumotoning talablarini qondirmaganidan so'ng u Ruby ustida ish boshlaydi. Rubyning birinchi ommaviy 0.95 versiyasi 1995-yil 21-dekabrda Yaponiya ichki telekonferensiyasida taqdim etiladi. Keyinchalik, ikki kun ichida Rubyning keyingi uchta versiyasi chiqariladi. Rubyning dastlabki versiyalarida ham Matsumoto alohida ahamiyatga ega bo'lgan imkoniyatlarni yaratgan edi: obyektga yo'naltirilgan dasturlash, meros olishga ega sinflar, iteratorlar, istisnolarni qayta ishlash (exception lar) va hokazolar.
 
-1995-yildan 2002-yilgacha bo'lgan davrda Ruby haqida yigirmaga yaqin kitob chop etiladi. Yaponiyada u Pythondan ko'ra ko'proq mashhur tilga aylanadi. 1997-yilda Ruby dokumentatsiyasi ingliz tilida paydo bo'ldi va 1998-yilda "ruby-talk" forumi ochildi. Biroq, 2004-yilgacha Ruby Yevropada va AQShda keng tarqalmagan edi. Uning qobiliyatlari va ko'plab qo'llab-quvvatlanadigan platformalar tufayli Ruby asta-sekin tomoshabinlar e'tiborini qozona boshladi.
+1995-yildan 2002-yilgacha bo'lgan davrda Ruby haqida yigirmaga yaqin kitob chop etiladi. Yaponiyada u Pythondan ko'ra ko'proq mashhur tilga aylanadi. 1997-yilda Ruby dokumentatsiyasi ingliz tilida paydo bo'ldi va 1998-yilda ["ruby-talk"](https://rubytalk.org/) forumi ochildi. Biroq, 2004-yilgacha Ruby Yevropada va AQShda keng tarqalmagan edi. Uning qobiliyatlari va ko'plab qo'llab-quvvatlanadigan platformalar tufayli Ruby asta-sekin tomoshabinlar e'tiborini qozona boshladi.
 
 2004-yilda [Ruby on Rails (RoR, yoki oddiygina Rails)](https://en.wikipedia.org/wiki/Ruby_on_Rails) dunyoga keldi, Rails — Rubyda yozilgan va [MVC (Model-View-Controller)](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) arxitekturasidagi veb-ilovalarni yaratish uchun ochiq kodli framework. Ushbu framework [Devid Xaynemeyer Xansson](https://en.wikipedia.org/wiki/David_Heinemeier_Hansson) tomonidan [37signals](https://37signals.com/) bilan birgalikda yaratilgan, Rails yadrosini ishlab chiqgan dasturchilar jamoasi va yuzlab open-source dasturchilarning sa'y-harakatlari bilan kengaytirilgan va takomillashtirilgan.
 
-Ruby tarixidagi asosiy voqealar Ruby 1.8.0 ning 2003-yilda chiqarilishi va 2007-yildagi Ruby on Rails ning 2.0 versiyasi edi. Shundan so'ng katta tijorat loyihalari uchun tildan foydalanishga bo'lgan qiziqish sezilarli darajada oshdi. 2006 yilda Ruby [Tiobe reytingida](https://en.wikipedia.org/wiki/TIOBE_index) "Yil dasturlash tili" mukofotini olgan. 2009-yili Ruby 1.9.1 versiyasi va RoR 3.0 versiyasi chiqarilishi bilan esa vaziyat sezilarli darajada o'zgardi: interpretatorning ishlash tezligi bir necha marta oshirildi, .NET va JVM ostida muqobil dasturlar bilan deyarli tenglashdi, tilning modifikatsiyasi tez-tez tanqid qilinadigan daqiqalarni yo'q qildi. TIOBE reytingi va [indeed.com](https://www.indeed.com/) ma'lumotlariga ko'ra 2009-yildan 2012-yilgacha davrda Ruby ga bo'lgan qiziqishlar uch barobar oshgan.
+Rails frameworki 2004-yilda yaratilishiga qaramasdan uning dastlabki versiyalari o'sha vaqt uchun juda katta yangilik va dasturchilar ishini juda yengillashtiruvchi vosita sifatida qaraladi. Shu o'rinda Devid Xaynemeyer Xanssonning 2005-yildagi Rails prezentatsiyasini keltirib o'tmoqchiman, bu o'z o'rnida meni ham hayratga solgan prezentatsiyalardan biridir:
+
+<div style="text-align: center"><iframe width="560" height="315" src="https://www.youtube.com/embed/Gzj723LkRJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+Ruby tarixidagi asosiy voqealar Ruby 1.8.0 ning 2003-yilda chiqarilishi va 2007-yildagi Ruby on Rails ning 2.0 versiyasi edi. Shundan so'ng katta tijorat loyihalari uchun tildan foydalanishga bo'lgan qiziqish sezilarli darajada oshdi. 2006 yilda Ruby [Tiobe reytingida](https://en.wikipedia.org/wiki/TIOBE_index) "Yil dasturlash tili" mukofotini olgan. 2009-yili Ruby 1.9.1 versiyasi va RoR 3.0 versiyasi chiqarilishi bilan esa vaziyat sezilarli darajada o'zgardi: interpretatorning ishlash tezligi bir necha marta oshirildi, .NET va JVM ostida muqobil dasturlar bilan deyarli tenglashdi, tilning modifikatsiyasi tez-tez tanqid qilinadigan joylari yo'q qilindi. TIOBE reytingi va [indeed.com](https://www.indeed.com/) ma'lumotlariga ko'ra 2009-yildan 2012-yilgacha davrda Ruby ga bo'lgan qiziqishlar uch barobar oshgan.
 
 Hozirgi kunga kelib esa Ruby ko'pchilik Linux, MacOS va operatsion tizimlar foydalanuvchilari uchun operatsion tizim bilan birga o'rnatilgan holda keladi. Ruby bilan bog'liq asosiy ilovalardan biri Ruby on Rails bo'lib qolmoqda, u faol rivojlanishda davom etmoqda, ammo Rubydan foydalanish aslida ancha keng — turli maqsadlar uchun ko'plab ilovalarni ishlab chiqadi, shuningdek, ilovalarni avtomatlashtirish va sozlash va administrativ yordam dasturlarini yozish uchun skript tili sifatida ishlatiladi, xususan, Linux operatsion tizimida. Masalan, ko'pchilik iOS dasturchilariga tanish [CocoaPods](https://en.wikipedia.org/wiki/CocoaPods) ham Ruby da yozilgan.
 
@@ -44,7 +48,7 @@ Matsumoto, obyektga yo'naltirilgan dasturlash fanati edi, Perldan ko'ra kuchliro
 
 * **Kompyuter uchun emas, inson uchun dasturlash tili**
   
-  Birinchi o'ringa, dasturni ishlab chiqishda dasturchining mehnat xarajatlarini minimallashtirishdir. Kompyuter bilan har qanday ish odamlar tomonidan va odamlar uchun amalga oshiriladi, va birinchi navbatda, odamlar sarf-xarajatlari va sa'y-harakatlari haqida g'amxo'rlik qilish kerak.
+  Birinchi o'rinda, dasturni ishlab chiqishda dasturchining mehnat xarajatlarini minimallashtirishdir. Kompyuter bilan har qanday ish odamlar tomonidan va odamlar uchun amalga oshiriladi, va birinchi navbatda, odamlar sarf-xarajatlari va sa'y-harakatlari haqida g'amxo'rlik qilish kerak.
 * **Oddiy, lekin juda oddiy ham emas.**
 
   Soddalashtirish - bu yaxshi, lekin u o'z-o'zini yo'q qiladigan yoki yakuniy natijaga zarar yetkazadigan ba'zi chegaralarni kesib o'tmasligi kerak.
@@ -85,7 +89,7 @@ Ruby on Rails quyidagi afzalliklarga ega:
 - Front-end (React, Vue, Angular...)
 
 ### Keng ekotizim
-Ruby on Rails-ni boshqa ko'plab frameworklar bilan solishtirganda aynan uning keng ekotizimi uni mukammal qiladi. RubyGems Ruby jamoasi tomonidan yaratilgan minglab GEM larni: qo'shimchalar, kutubxonalar yoki dasturiy ta'minot qismlari shaklini olish imkonini beradi.
+Ruby on Rails-ni boshqa ko'plab frameworklar bilan solishtirganda aynan uning keng ekotizimi uni mukammal qiladi. [RubyGems](https://rubygems.org/) Ruby jamoasi tomonidan yaratilgan minglab GEM larni: qo'shimchalar, kutubxonalar yoki dasturiy ta'minot qismlari shaklini olish imkonini beradi.
 
 ### Ruby on Rails - MVC
 MVC - Ruby on Rails infratuzilmasining yana bir muhim qismidir. Bu atama model-view-controller formatini bildiradi. Yondashuv ilovaning ishini uchta kichik tizimga ajratadi, ularning har biri bir qator harakatlar uchun mas'uldir:
@@ -97,22 +101,22 @@ MVC - Ruby on Rails infratuzilmasining yana bir muhim qismidir. Bu atama model-v
 RoR dasturchilari kodning tayyor qismidan (kutubxonalar) foydalanishlari mumkin, bu esa ko'plab funktsiyalarni amalga oshirishni osonlashtiradi. Natijada, dastur kodi toza va yuqori o'qiluvchan bo'ladi. Barcha kelajakdagi yangilanishlar tez va muammosiz amalga oshiriladi, chunki siz o'qish va tartiblash uchun kamroq kodingiz bor. Bu Ruby on Rails da dasturlashning iqtisodiy tomoni uchun muhim xususiyat hisoblanadi.
 
 ### DRY
-DRY (don't repeat yourself) — Ruby on Rails asoslangan yana bir printsip. Agar takroriy vazifa mavjud bo'lsa, u holda siz bir xil kodni qayta-qayta yozishingiz shart emas.
+[DRY (don't repeat yourself)](https://ru.wikipedia.org/wiki/Don%E2%80%99t_repeat_yourself) — Ruby on Rails asoslangan yana bir tamoyildir. Agar takroriy vazifa mavjud bo'lsa, u holda siz bir xil kodni qayta-qayta yozishingiz shart emas.
 
 ### Keng masshtablilik
-Masshtablilik Ruby on Rails ning yana bir afzalligi hisoblanadi. RoRda qurilgan dastur bir nechta foydalanuvchilar tomonidan yuborilgan minglab so'rovlarni qayta ishlash uchun kengaytirilishi mumkin. Ruby sekundiga 80 000 so'rovlarni bajara oladi.
+Masshtablilik Ruby on Rails ning yana bir afzalligi hisoblanadi. RoRda qurilgan dastur bir nechta foydalanuvchilar tomonidan yuborilgan minglab so'rovlarni qayta ishlash uchun kengaytirilishi mumkin. Masalan, Ruby da yozilgan [Shopify](https://en.wikipedia.org/wiki/Shopify) sekundiga 80 000 so'rovlarni bajara olishi ta'kidlanadi.
 
 ### Xavfsizlik
-RoR xavfsizlik masalalarini xavf ostiga qo'ymaydi. Railsning yana bir afzalliklaridan biri bu xavfsizlikdir. Infrastruktura SQL Injection va XSS hujumlaridan himoyalangan ilovalarni yaratadigan ba'zi xavfsizlikka asoslangan xususiyatlarga ega. Bundan tashqari, boshqa xavfsizlik tahdidlariga qaratilgan ko'plab GEMlarni topishingiz mumkin.
+RoR xavfsizlik masalalarini xavf ostiga qo'ymaydi. Railsning yana bir afzalliklaridan biri bu xavfsizlikdir. Infrastruktura [SQL Injection](https://en.wikipedia.org/wiki/SQL_injection) va [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting) hujumlaridan himoyalangan ilovalarni yaratadigan ba'zi xavfsizlikka asoslangan xususiyatlarga ega. Bundan tashqari, boshqa xavfsizlik tahdidlariga qaratilgan ko'plab GEMlarni topishingiz mumkin.
 
 ### Keshlash
 Ruby on Rails asosiy konfiguratsiyasida to'liq ma'lumot keshlash vositalari mavjud. Proyekt yaratganingizda, ma'lumotlarni keshlashni amalga oshirish imkonini beruvchi vositalar taqdim etiladi. Siz butun sahifalarni yoki kod bloklarini keshlashingiz mumkin. So'rov natijalarini va ActiveRecord modellarini keshlashingiz mumkin. Siz memcached yoki redis va boshqa vositalar yordamida ham ularni kesh vositasi sifatida ko'rsatish orqali keshlashingiz mumkin. Proyektlarda keshlashni amalga oshirish uchun sizdan 95 foiz hollarda tayyor va to'liq yechimlardan boshqa hech narsa talab qilinmaydi.
 
-### Vaqt va xarajat samaradorligi
-Vaqt ko'pincha boshlang'ichlar uchun asosiy to'siqdir. Yuqorida sanab o'tilgan barcha funktsiyalar Ruby on Rails-ni vaqt va xarajatlardan tejashga yordam beradi.
+### Vaqt va xarajat optimizatsiyasi
+Vaqt ko'pincha boshlang'ich bizneslar yoki startaplar uchun asosiy to'siqdir. Yuqorida sanab o'tilgan barcha funktsiyalar Ruby on Rails-ni vaqt va xarajatlardan tejashga yordam beradi.
 
 ### RAD
-RAD (Rapid-application development) - RoR ishlatiladigan yana bir soha. Struktura joylashtirishni o'zgartirish jarayonini optimallashtiradi.
+[RAD (Rapid-application development)](https://en.wikipedia.org/wiki/Rapid_application_development) - RoR ishlatiladigan yana bir soha. Struktura joylashtirishni o'zgartirish jarayonini optimallashtiradi.
 
 ### O'z-o'zini hujjatlashtirish
 Yuqorida aytib o'tganimizdek, Ruby kodi yaxshi o'qiladi va o'z-o'zini hujjatlaydi (o'z-o'zini ta'riflaydi). Bu dasturlash jarayonini tezlashtiradi, chunki dasturlash jamoasi alohida hujjatlarni yozishga hojat yo'q. Dasturlash jamoasiga yangi kelganlarga kontseptsiyani tushunish va mavjud loyihalarda ishtirok etish bilan bog'liq muammolarga duch kelmasligi kerak.
@@ -121,10 +125,10 @@ Yuqorida aytib o'tganimizdek, Ruby kodi yaxshi o'qiladi va o'z-o'zini hujjatlayd
 RoR da uchta standart muhit mavjud: development, production va test. Barcha dasturlash sikli optimallashtiriladi va har bir bosqichda ishlab chiqilgan mahsulotni sinab ko'rishingiz mumkin.
 
 ### Deploy
-Ruby on Rails muhitida juda qulay instrumentlar mavjud va ular deploy jarayonida ishlatiladigan vositalarni o'z ichiga oladi. Misol uchun, Capistrano-dan foydalanib, ilovaning yangi versiyasini boevoy serverga (yoki bir nechta serverlarga) joylash uchun konsolda bitta buyruqni talab qiladi: ```cap deploy```.
+Ruby on Rails muhitida juda qulay instrumentlar mavjud va ular deploy jarayonida ishlatiladigan vositalarni o'z ichiga oladi. Misol uchun, [Capistrano](https://capistranorb.com/)dan foydalanib, ilovaning yangi versiyasini boevoy serverga (yoki bir nechta serverlarga) joylash uchun konsolda bitta buyruqni talab qiladi: ```cap deploy```.
 
 ### Background jobs
-Orqa fonda ishlovchi protseslar uchun Sidekiq va boshqa instrumentlar mavjud. Ya'ni, asinxron bajariladigan ishlarni bemalol qiyinchiliklarsiz realizatsiya qila olasiz.
+Orqa fonda ishlovchi protseslar uchun [Sidekiq](https://sidekiq.org/) va boshqa instrumentlar mavjud. Ya'ni, asinxron bajariladigan ishlarni bemalol qiyinchiliklarsiz realizatsiya qila olasiz.
 
 ### Front-end
 Rails 6 dan boshlab Webpacker Rails CLI bilan birga run qilish imkoniyati paydo bo'ldi. Bu degani siz Angular, Vue.js yoki React ni to'g'ridan to'g'ri proyekt ichida yozishingiz va rails bilan birga run qilishingiz mumkin. Bundan tashqari, Webpacker bo'lmagan taqdirda siz view larni ERB, HAML, SLIM, Liquid shablonlar orqali tasvirlashingiz mumkin.  
@@ -143,7 +147,7 @@ Ruby on Rails ning ko'plab afzalliklari bor bo'lsa-da, uni ishlatishga qaror qab
 Ruby on Rails tez ishlaydi, lekin boshqa obyektga asoslangan dasturlash tillarining aksariyati kabi tez emas. Ishlash tezligi tez-tez "Ruby on Rails" ga qarshi asosiy argument deb ataladi. NodeJS yoki GoLang bilan ishlash tezligini solishtirganda Ruby on Rails ortda qolmoqda. Shunga qaramay, masalan Java Spring frameworkini ko'rib chiqsak, RoR g'alaba qozonadi.
 
 ### IDE to'liq ishlamasligi
-So'nggi yillarda IDE lar funksionalidan to'liq foydalanib o'rganib qolganim sababli, Rails ning ushbu kamchiligi men uchun og'riqlidir. Rails barcha sinflarni birdaniga yukalagani sabab bo'lsa kerak, IDE tavsiyalari unchalik ham to'g'ri bo'lmaydi, ko'p holatlarda kodlar tagiga sariq chiziqlar ko'rinadi (RubyMine ishlataman).
+So'nggi yillarda IDE lar funksionalidan to'liq foydalanib o'rganib qolganim sababli, Rails ning ushbu kamchiligi men uchun og'riqlidir. Rails barcha sinflarni birdaniga yukalagani sabab bo'lsa kerak, IDE tavsiyalari unchalik ham to'g'ri bo'lmaydi, ko'p holatlarda kodlar tagiga sariq chiziqlar ko'rinadi ([RubyMine](https://www.jetbrains.com/ruby/) ishlataman). Lekin, bir tarafdan haqiqiy dasturchi IDE ga qul bo'lmasligi kerak degan tamoyilga ham amal qilaman, ayrim dasturchilarni bilaman hatto Java kodni ham oddiy redaktorlarda yozishadi.
 
 ### Yuklanish tezligi
 Dasturchilar yuklanish tezligini Ruby on Rails muhitining eng yomon jihatlaridan biri deb atashadi. Foydalanilgan fayllar va GEMlar soniga qarab, platformani ishga tushirish ancha vaqt talab qilishi mumkin. Taxminimcha, buning sababi, RoR ishga tushganda barcha namespace dagi obyektlar qamrab olinadi, bunga sabab RoR da namespace yoki package tushunchasi yo'q hisobi.
@@ -156,7 +160,9 @@ Barcha sayt hostinglari Ruby on Rails ni qo'llab-quvvatlamaydi. Framework PHP-da
 ### Ruby on Rails bo'yicha dasturchilar yo'q yoki ish yo'q
 Dasturchilar bor, shunchaki ular PHP-dasturchilarga qaraganda kamroq. Bu texnologiyani o'zlashtirishga kirish usullaridan kelib chiqadi va odatda ko'pchilik dasturchilar PHPda bir necha yildan keyin Ruby ga o'tadi. Yaxshi dasturchilar esa barcha texnologiyalarda bir xil darajada kam.
 
-Ruby bo'yicha ish topilmaydi deydiganlarga esa LinkedIn da test qilib ko'rishlarini so'rardim, bugungi 26/06/2021 sanasi bo'yicha LinkedIn da quyidagicha natijalarni topdim:
+Oldinlari men ham xuddi shunday fikrda bo'lganman, xatto Boostin firmasini tashkil qilib stajerlarni yig'gan paytimizda bitta Ruby dasturchini unga Ruby bo'yicha ish topilmasligini uqtirib iOS dasturchilikni o'rgan bizni yonimizda yurib degan taklifni berganmiz, taqdir taqozosi bilan aynan o'sha yigit meni Rubyga o'tishimga va hozirgi Gap Intelligence da ishlashimga turtki bo'lgan insondir.
+
+Bugunga kelib eski qotib qolgan fikrlarim o'zgargan, Ruby bo'yicha ish topilmaydi deydiganlarga esa LinkedIn da test qilib ko'rishlarini so'rardim, bugungi 26/06/2021 sanasi bo'yicha LinkedIn da quyidagicha natijalarni topdim:
 - Ruby On Rails tegi bo'yicha vakansiyalar soni - 8,000+
 - Django tegi bo'yicha - 7,000+
 - Laravel tegi bo'yicha - 1,000+
@@ -166,7 +172,7 @@ Ruby bo'yicha ish topilmaydi deydiganlarga esa LinkedIn da test qilib ko'rishlar
 Yuqori darajadagi dasturchilar haqiqatda juda qimmat turishadi va ular har qanday dasturlash tillarida va platformalarda teng darajada qimmat. RoR jamiyatida pastroq darajadagi dasturchilar kamligi tufayli arzon dasturchilar yo'q (albatta, istisnosiz emas). Bunga sabab odatda ular boshqa tillarda ishlab keyinchalik Ruby ga o'tishlaridir. (bu faqat mening fikrim emas, ko'pchilik Ruby dasturchilar oldin PHP da ishlagani yoziladi)
 
 ### Rails proyektlar kattalashmaydi
-Bu RoR da katta proyekt yozib ko'rmagan insonlarning anglashilmovchiligidan boshqa narsa emas. RoR da ham katta miqyosda proyektlar qilish mumkin. Masalan, GitHub, Groupon, Basecamp va boshqalarga qarang, ularning hammasi Rails da yozilgan. (bu PHP da katta proyekt qilib bo'lmaydi deydiganlarga ham tegishli)
+Bu RoR da katta proyekt yozib ko'rmagan insonlarning anglashilmovchiligidan boshqa narsa emas. RoR da ham katta miqyosda proyektlar qilish mumkin. Masalan, [GitHub](https://github.com/), [Groupon](https://www.groupon.com/), [Basecamp](https://basecamp.com/) va boshqalarga qarang, ularning hammasi Rails da yozilgan. (bu PHP da katta proyekt qilib bo'lmaydi deydiganlarga ham tegishli)
 
 ### Rails o'smaydi, contributor lar kam
 Bugungi, 26/06/2021 sana bo'yicha TOP frameworklar contributorlari soni:
@@ -236,7 +242,7 @@ b = [2, 3, 4]
 puts a & b          #=> [2, 3]
 puts a | b          #=> [1, 2, 3, 4]
 </pre>
-- ro'yxatni ko'p davom ettirishim mumkin, Ruby ni boshqa tillar bilan solishtiradigan tomoni juda ham ko'p, lekin shunga yarasha bir xil tomonlari ham ko'p, sababi, Ruby da bir xil natijaga har xil usul bilan yetishish mumkin.
+- ro'yxatni ko'p davom ettirishim mumkin, Ruby ni boshqa tillar bilan solishtiradigan tomoni juda ham ko'p, lekin shunga yarasha bir xil tomonlari ham ko'p, sababi, Ruby da bir xil natijaga har xil usul bilan yetishish mumkin. Ro'yxat uzunligi sabab uni davom ettirishga hojat yo'q va qiziquvchilar o'zlari internetdan qidirib yoki o'rganish jarayonida guvoh bo'ladi deb o'ylayman.
 
 ## Xulosa
 
@@ -244,11 +250,11 @@ Ko'pincha odamlarning mish-mishlari bir yoki bir nechta mahsulotni o'limga hukm 
 
 Ruby o'lgan deb aytadigan har bir kishi ingliz tili bilmaydi yoki ingliz tilidagi communitylarni juda kam o'qiydi deb o'ylayman. Bundan tashqari, shaxsiy kuzatishlarimdan, ko'pincha texnologiya rivojlanishni to'xtatganda o'ladi va ular tajriba qilishni to'xtatadilar. Lekin bu holatda ham katta proyektlari bo'lgan kompaniyalar o'z proyektini qayta yozib chiqishni hohlamasa ushbu texnologiya rivojlanishini ushlab turishga harakat qiladi deb o'ylayman.
 
-Ruby tili o'rganish uchun ham qulay til deb hisoblay boshladim, sababi, undagi narijaga har xil usulda borish mumkinligi boshlang'ich dasturchilarga qo'l keladi. Rails frameworki esa xuddi PHP ning boshqa frameworklari kabidir (balki ulardan ozgina mukammalroq ham), o'rganish uchun unchalik qiyinchilik tug'dirmaydi.
+Ruby tili o'rganish uchun ham qulay til deb hisoblay boshladim, sababi, undagi narijaga har xil usulda borish mumkinligi boshlang'ich dasturchilarga qo'l keladi. Xatto [RubyKids](http://kidsruby.com/) loyihasi ham yosh bolalarga dasturlashni o'rganish uchun yaxshi xizmat qiladigan proyektlardan biri va bugungi kunda o'zining ko'plab mijozlariga ega loyiha hisoblanadi. Rails frameworki esa xuddi PHP ning boshqa frameworklari kabidir (balki ulardan ozgina mukammalroq ham), o'rganish uchun unchalik qiyinchilik tug'dirmaydi.
 
 Xullas, xulosa o'rnida aytishim mumkinki Ruby qo'rqinchli dasturlash tili emas, tarqatilayotgan dizinformatsiyalar kabi yaqin ora tugab ketadigan ham emas, hozirgi kunda o'z o'rniga, o'z jamoasi va community siga, o'z gigant mijozlariga ega dasturlash tili. Ruby on Rails esa boshqa frameworklardan qolishmaydigan, o'ziga yetarli kutubxona, instrument va funksionallarga ega frameworkdir. O'z faoliyatimdan kelib chiqib agarda qiziquvchilar bo'lsa o'rganishni tavsiya beraman.
 
-As Johnny Cash sings, "Rock & Roll Ruby"!
+[Johnny Cash](https://en.wikipedia.org/wiki/Johnny_Cash) kuylaganidek, ["Rock & Roll Ruby"](https://www.youtube.com/watch?v=jIKoMHkl4GU)!
 
 
 ---
